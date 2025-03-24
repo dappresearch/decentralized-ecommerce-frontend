@@ -49,7 +49,8 @@
     </div>
     <div class="col-md-6 d-flex flex-column mt-2">
       <div>
-        <h2>Lasha Apso Dog Sticker</h2>
+        <h4>Lasha Apso Dog Sticker - 1 Sheet</h4>
+        <p class="fs-6">*Shipping price included</p>
         <h5>
           Price:
           {#if $provider && showSpinner}
