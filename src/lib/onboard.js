@@ -5,6 +5,15 @@ import walletConnectModule from '@web3-onboard/walletconnect';
 
 const injected = injectedModule();
 
+export const PROJECT_ID = import.meta.env.VITE_PROJECTID;
+
+const wcInitOptions = {
+  projectId: PROJECT_ID,
+  dappUrl: 'http://apsostore.com'
+}
+
+const walletConnect = walletConnectModule(wcInitOptions)
+
 // initialize the module with options
 const metamaskSDKWallet = metamaskSDK({options: {
   extensionOnly: false,
@@ -15,18 +24,35 @@ const metamaskSDKWallet = metamaskSDK({options: {
 
 const wallets = [
   injected,
-  metamaskSDKWallet
+  metamaskSDKWallet,
+  walletConnect
 ];
 
-// Web3 onboard requires to pass chain by default.
-// Passing random chain, which will not be used.
-const  chains = [
+const chains = [
   {
-    id: 2192,
-    token: 'SNAXETH',
-    label: 'SNAX Chain',
-    rpcUrl: 'https://mainnet.snaxchain.io'
-  }
+    id: 1,
+    token: 'ETH',
+    label: "Ethereum Mainnet",
+    rpcUrl: 'https://mainnet.infura.io'
+  },
+  {
+    id: 42161,
+    token: 'ARB-ETH',
+    label: 'Arbitrum One',
+    rpcUrl: 'https://arb1.arbitrum.io/rpc'
+  },
+  {
+    id: 1115511,
+    token: 'ETH',
+    label: 'Sepolia',
+    rpcUrl: 'https://sepolia.infura.io'
+  },
+  {
+    id: 421614,
+    token: 'ARB-ETH',
+    label: 'Sepolia Arbitrum',
+    rpcUrl: 'https://sepolia-rollup.arbitrum.i/rpc'
+  },
 ];
 
 const appMetadata = {
