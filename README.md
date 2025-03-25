@@ -7,14 +7,14 @@ Experimental decentralize e-commerce
 * decom-admin:https://github.com/dappresearch/decom-admin 
   (Order management)
 
-# Package installati0n
+### Package installation
 
 ```bash
 npm install
 
 ```
 
-## Building
+### Building
 
 To create a production version of your app:
 
@@ -22,24 +22,23 @@ To create a production version of your app:
 npm run build
 ```
 
-
-## Local host deployment
+### Local host deployment
 
 ```bash
 npm run dev
 
 ```
 
-## Cloud flare deployment
+### Cloud flare deployment
 
-Configure wrangler.
+Configure wrangler:
 
 ```bash
 wrangler login
 
 ```
 
-Deployment.
+Deployment:
 
 ```bash
 
