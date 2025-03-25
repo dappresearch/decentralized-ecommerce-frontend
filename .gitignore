@@ -3,8 +3,11 @@ node_modules
 # Output
 .output
 .vercel
+package-lock.json
+pnpm-lock.yaml
 /.svelte-kit
 /build
+
 
 # OS
 .DS_Store
