@@ -1,6 +1,6 @@
 <script>
   import Connect from "./Connect.svelte";
-  import sticker from "$lib/assets/sticker.jpg";
+ 
   import OrderQuantity from "$lib/components/OrderQuantity.svelte";
   import { provider } from "$lib/stores.js";
   import { goto } from "$app/navigation";
@@ -10,9 +10,10 @@
   let price;
   let totalStock;
   let data;
-  let showSpinner = false;
-
+  let showSpinner = false
   let isDisable = false;
+
+  let productImage = import.meta.env.VITE_PRODUCT_IMAGE;
 
   const fetchCostAndPrice = async (provider, qty) => {
     const data = await getCostAndPrice(provider, qty);
@@ -42,7 +43,7 @@
   <div class="row">
     <div class="col-md-6 text-center">
       <img
-        src={sticker}
+        src={productImage}
         alt="sticker"
         class="img-fluid sticker-image"
       />
