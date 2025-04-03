@@ -1,4 +1,4 @@
-# Decom-frontend(apsostore.com)
+# decentralized-ecommerce-frontend(apsostore.com)
 
 Experimental decentralize e-commerce
 * website: https://apsostore.com
@@ -24,11 +24,16 @@ For example, if the smart contract has been deployed on the Sepolia network, the
 VITE_SEPOLIA_CONTRACT_ADDRESS="Sepolia deployment address"
 VITE_SEPOLIA_PRICE_V3_ADDRESS="Sepolia price feed deployment address"
 
-If you intend to use walletconnect, vist https://cloud.reown.com/sign-in
+Need to configure wallet connect first otherwise it'll throw an error, vist https://cloud.reown.com/sign-in , 
 
 get a project id and store inside .env file.
 
-VITE_PROJECTID="Wallet connect project id"
+VITE_PROJECTID="Your wallet connect project id"
+
+### Node and Npm version
+
+node version >= 20.9.0
+npm version >= 10.1.0
 
 ### Package installation
 
