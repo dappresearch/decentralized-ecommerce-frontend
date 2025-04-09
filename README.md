@@ -30,6 +30,13 @@ get a project id and store inside .env file.
 
 VITE_PROJECTID="Your wallet connect project id"
 
+
+## Tutorial video
+
+Full video: https://youtu.be/HW9AnF894Go
+
+Front-end installation video: https://youtu.be/QBdC_IfeNQc
+
 ### Node and Npm version
 
 node version >= 20.9.0
