@@ -8,10 +8,13 @@
     paymentSucess,
   } from "$lib/stores";
   import { goto } from "$app/navigation";
-  import sticker from "$lib/assets/sticker.jpg";
   import OrderQuantity from "$lib/components/OrderQuantity.svelte";
   import onboard from "$lib/onboard.js";
   import { Web3 } from 'web3';
+
+
+  let sticker = import.meta.env.VITE_PRODUCT_IMAGE;
+
 
   import {
     loadContract,

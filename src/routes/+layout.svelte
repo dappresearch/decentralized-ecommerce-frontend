@@ -81,7 +81,7 @@
     >
         <div class="d-flex gap-4 mb-3">
             <a
-                href="https://discord.gg/fFqxS8te"
+                href="https://discord.gg/SJUWynPQ"
                 target="_blank"
                 class="text-dark"
                 aria-label="Discord"
